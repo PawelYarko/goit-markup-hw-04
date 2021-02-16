@@ -1,0 +1,421 @@
+:root {
+  /* background colors */
+  --bg-color-grey: #2f303a;
+  --bg-color-white: #ffffff;
+  --bg-color-light-grey: #e5e5e5;
+  --bg-color-white-solid: #f5f4fa;
+
+  /* text colors */
+  --accent-color-blue: #2196f3;
+  --text-color-black: #212121;
+  --text-color-grey: #757575;
+  --text-color-white: #ffffff;
+  --text-color-black-transparent: rgba(255, 255, 255, 0.6);
+
+  /* border colors */
+  --border-grey: #eeeeee;
+  --border-grey-light: #ececec;
+}
+
+/* list fix */
+
+.list {
+  list-style-type: none;
+}
+
+/* link fix */
+
+.link {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color-blue);
+}
+
+/* button */
+
+.button {
+  font-family: inherit;
+
+  background-color: var(--bg-color-white-solid);
+  color: var(--text-color-black);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color-blue);
+  color: var(--bg-color-white);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  color: var(--text-color-black);
+}
+
+/* FIX MARGIN ON h and p */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HEADER */
+
+.nav-list,
+.nav-contact {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  border-bottom: 1px solid var(--border-grey-light);
+}
+.nav-list {
+  margin-right: auto;
+  margin-left: 93px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.nav-list-link {
+  padding: 32px 0px;
+}
+
+.nav-list-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.nav-contact {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.link-contact {
+  padding: 32px 0px;
+
+  color: var(--text-color-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.nav-contact-list:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-logo {
+  margin-top: 0px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 26px;
+
+  color: var(--text-color-black);
+
+  text-decoration: none;
+}
+
+.nav-logo-color {
+  color: var(--accent-color-blue);
+}
+
+.nav-list-link {
+  color: var(--text-color-black);
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* PORTFOLIO ACTIVE */
+
+.active-btn {
+  color: var(--accent-color-blue);
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  background-color: var(--accent-color-blue);
+  color: var(--text-color-white);
+
+  text-decoration: none;
+}
+
+/* FEATURES  */
+
+.features,
+.about {
+  background-color: var(--bg-color-white-solid);
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-box-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-box-title {
+  margin-bottom: 10px;
+
+  color: var(--text-color-black);
+
+  font-weight: 700;
+  font-size: 14px;
+
+  text-transform: uppercase;
+}
+
+.features-box {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.features-box-text {
+  color: var(--text-color-grey);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ABOUT OUR WORK */
+
+.about {
+  padding-bottom: 94px;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  color: var(--text-color-black);
+
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* OUR TEAM */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--bg-color-light-grey);
+}
+
+.team-list {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-member-bg {
+  max-width: 270px;
+
+  background-color: var(--bg-color-white);
+
+  text-align: center;
+}
+
+.team-title {
+  color: var(--text-color-black);
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.team-member {
+  padding-top: 30px;
+  color: var(--text-color-black);
+}
+
+.team-profession {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: var(--text-color-grey);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 60px 0px;
+  background-color: var(--bg-color-grey);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+
+  color: var(--text-color-white);
+
+  text-decoration: none;
+}
+
+.footer-address-city {
+  margin-bottom: 9px;
+  color: var(--text-color-white);
+
+  font-style: normal;
+}
+
+.footer-address {
+  color: var(--text-color-black-transparent);
+
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-link-contact {
+  margin-bottom: 9px;
+  color: var(--text-color-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer-link-contact:last-child {
+  margin-bottom: 0px;
+}
+
+/*--------- PORTFOLIO ---------- */
+
+/* PORTFOLIO PROJECTS */
+
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 56px;
+}
+.filter-list-item {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  border-radius: 4px;
+  border: transparent;
+  box-sizing: border-box;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.filter-btn:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.portfolio-list-item:nth-child(3n + 1) {
+  margin-left: 0px;
+}
+
+.portfolio-list-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.portfolio-list-box {
+  padding: 20px 24px;
+  border: 1px solid var(--border-grey);
+}
+
+.project-name {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.project-text {
+  color: var(--text-color-grey);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
