@@ -34,10 +34,6 @@
 .link:hover,
 .link:focus {
   color: var(--accent-color-blue);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* button */
@@ -53,13 +49,17 @@
 .button:focus {
   background-color: var(--accent-color-blue);
   color: var(--bg-color-white);
+}
 
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.button-shadow:hover,
+.button-shadow:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 body {
+  margin: 0px;
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 
@@ -343,6 +343,9 @@ img {
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -483,7 +486,7 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-
+  font-style: normal;
   font-family: "Raleway";
   font-weight: bold;
   font-size: 26px;
@@ -591,9 +594,6 @@ img {
 }
 .filter-list-item {
   margin-right: 8px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .filter-btn {
@@ -648,4 +648,12 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.portfolio-link-shadow:hover,
+.portfolio-link-shadow:focus {
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
